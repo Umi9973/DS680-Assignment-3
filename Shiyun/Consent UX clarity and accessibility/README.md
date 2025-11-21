@@ -8,13 +8,14 @@ Before you start please notice that ## if you want to use any non-free models, p
 
 ```
 your_project/
-├──content_prompts_en.json          # Initial prompts refer to the existing materials
-├── generate_responses.py          # Generates model responses using GPT-4o and Ollama
+├── content_prompts_en.json         # Initial prompts refer to the existing materials
+├── generate_responses.py           # Generates model responses using GPT-4o and Ollama
 your_project/outputs
-├── score_responses.py              # Scores responses using GPT-4o based on ethical rubric
+├── score_responses_v2.py           # Scores responses using GPT-4o based on ethical rubric
 ├── responses_gpt4o_vs_ollama.jsonl # Collected responses from both models
 ├── scored_responses.jsonl          # Scored results with clarity, tone, completeness, etc.
 ├── scoring_errors.jsonl            # Log of failed or invalid response scorings (if any)
+├── GPT-4o_vs_ollama_Scoring.csv    # The final scores record
 
 ├── README.md                       # This file
 ```
@@ -51,7 +52,7 @@ If any response failed to be scored (e.g., empty or invalid JSON), they will be 
 scoring_errors.jsonl
 ```
 
-## 📋 Scoring Dimensions
+##  Scoring Dimensions
 
 Each response is rated 0–5 for:
 
