@@ -38,6 +38,20 @@ The analysis is based on official and non-official but credible sources and foll
   - Label Clarity: **0.25**  
   - User Effort: **0.15**  
   - Trust & UX Confidence: **0.15**
+    
+### Scoring Weight Justification
+
+The scoring weights were allocated according to the relative impact of each criterion on the visibility and usability of safety-related interface entries in ChatGPT. The design emphasizes factors that determine whether users can efficiently locate, interpret, and act upon privacy or safety settings.
+
+| Criterion | Weight | Rationale |
+|----------|--------|-----------|
+| **Menu Placement Visibility** | **0.25** | The most critical factor. If users cannot easily find where safety controls are located (e.g., nested under multiple menus), they are unlikely to use them. Direct discoverability is essential. |
+| **Label Clarity** | **0.25** | Clear semantic expression (e.g., terminology like “Chat History & Training” or “Delete all chats”) significantly affects comprehension and correct usage. Ambiguous or indirect labels reduce safety effectiveness. |
+| **Iconography Prominence** | 0.20 | Visual emphasis (e.g., toggle visibility, color cues, placement) helps users notice the control, but it is less influential than how easily the control can be located or understood. |
+| **User Effort (Steps Required)** | 0.15 | The number of interactions needed (click depth) affects accessibility. However, as long as pathways are clearly communicated, it is secondary to placement and clarity. |
+| **Trust & UX Confidence** | 0.15 | The perceived certainty that the control functions as intended (e.g., greyed-out history or confirmation messages) is valuable but does not directly affect discoverability or comprehension. |
+
+**In summary, the highest weighting is assigned to functional discoverability (`Menu Placement`) and interpretability (`Label Clarity`). Visual aesthetics and interaction complexity are included but treated as supporting rather than primary factors.**
 
 ### 3. Automated Scoring Execution
 - Implemented in `score_docubasev1.ipynb` using GPT-4o.
