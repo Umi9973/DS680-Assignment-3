@@ -16,34 +16,34 @@ Files are organized by task module and model version for clarity and reproducibi
 
 ```
 PuchenLiu/
-│── Automated agent disclosure in user-facing interactions/
-│     ├── GPT4.1/
-│     │     ├── automated_agent_gpt4.1_xxx.json
-│     │     ├── automated_agent_gpt4.1_xxx.txt
-│     │     └── GPT4.1-automated.py
-│     ├── GPT5/
-│     │     ├── automated_agent_disclosure_gpt5_xxx.json
-│     │     ├── automated_agent_disclosure_gpt5_xxx.txt
-│     │     └── GPT5-automated.py
-│     └── automated_agent_disclosure_prompts.txt
+│── Automated agent disclosure in user-facing interactions/     # Evaluation of agent identity disclosure behavior
+│     ├── GPT4.1/                                               # Results generated using GPT-4.1
+│     │     ├── automated_agent_gpt4.1_xxx.json                 # Raw JSON output for disclosure evaluation (GPT-4.1)
+│     │     ├── automated_agent_gpt4.1_xxx.txt                  # Plain-text output for disclosure tests (GPT-4.1)
+│     │     └── GPT4.1-automated.py                             # Script used to run GPT-4.1 disclosure prompts
+│     ├── GPT5/                                                 # Results generated using GPT-5
+│     │     ├── automated_agent_disclosure_gpt5_xxx.json        # Raw JSON output for disclosure evaluation (GPT-5)
+│     │     ├── automated_agent_disclosure_gpt5_xxx.txt         # Plain-text output for disclosure tests (GPT-5)
+│     │     └── GPT5-automated.py                               # Script used to run GPT-5 disclosure prompts
+│     └── automated_agent_disclosure_prompts.txt                # Prompt set for agent disclosure evaluation
 │
-│── Qwen-score/
-│     ├── automated_eval_scores.csv
-│     └── system_identity_qwen_scores_*.csv
+│── Qwen-score/                                                 # Blockwise scoring results using Qwen evaluator
+│     ├── automated_eval_scores.csv                             # CSV of automated evaluation scores
+│     └── system_identity_qwen_scores_*.csv                     # System identity scoring results from Qwen
 │
-│── System identity, capabilities, and limitations communicated in context/
-│     ├── GPT4.1/
-│     │     ├── system_identity_gpt4.1_xxx.json
-│     │     ├── system_identity_gpt4.1_xxx.txt
-│     │     └── GPT4.1-system.py
-│     ├── GPT5/
-│     │     ├── system_identity_eval_gpt5_xxx.json
-│     │     ├── system_identity_eval_gpt5_xxx.txt
-│     │     └── GPT5-system.py
-│     └── system_identity_prompts.txt
+│── System identity, capabilities, and limitations.../          # Evaluation of model identity & capability statements
+│     ├── GPT4.1/                                               # Results generated using GPT-4.1
+│     │     ├── system_identity_gpt4.1_xxx.json                 # Raw JSON system-identity outputs (GPT-4.1)
+│     │     ├── system_identity_gpt4.1_xxx.txt                  # Plain-text system-identity outputs (GPT-4.1)
+│     │     └── GPT4.1-system.py                                # Script to run GPT-4.1 system identity prompts
+│     ├── GPT5/                                                 # Results generated using GPT-5
+│     │     ├── system_identity_eval_gpt5_xxx.json              # Raw JSON system-identity outputs (GPT-5)
+│     │     ├── system_identity_eval_gpt5_xxx.txt               # Plain-text system-identity outputs (GPT-5)
+│     │     └── GPT5-system.py                                  # Script to run GPT-5 system identity prompts
+│     └── system_identity_prompts.txt                           # Prompt set for system identity evaluation
 │
-│── GPT4_vs_GPT5_summary.txt
-│── README.md
+│── GPT4_vs_GPT5_summary.txt                                    # Summary comparing GPT-4.1 vs GPT-5 behaviors
+│── README.md                                                   # Project documentation
 ```
 
 ---
